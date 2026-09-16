@@ -2,7 +2,7 @@
     import { onDestroy, onMount } from 'svelte';
     import ToggleThemeBtn from './ToggleThemeBtn.svelte';
 
-	const { userInfo  } = $props();
+	const { userInfo } = $props();
 </script>
 
 <div class="relative w-full bg-gray-50 dark:bg-black text-black dark:text-white border border-gray-300 dark:border-white rounded-lg shadow-sm shadow-black/80 dark:shadow-white/80 p-4">
@@ -17,5 +17,5 @@
 				</div>
 			</div>
 		{/if}
-		<ToggleThemeBtn themeData={"light"} />
+		<!--<ToggleThemeBtn themeData={"light"} />-->
 </div>
