@@ -52,8 +52,6 @@
 
 	let tasks: Task[] | undefined = $state([]);
 
-	const containerStyle = "px-4 py-8 bg-white dark:bg-gray-900 text-black dark:text-white rounded-lg shadow-md border border-gray-300 dark:border-gray-700";
-
 	function handleMessage(event) {
 		const data = event.data;
 		if (data.action === 'setVisible') {
@@ -118,8 +116,8 @@
 </script>
 
 {#if visible}
-<div class="h-screen w-screen overflow-hidden flex items-center-safe justify-center bg-[url('https://wallpaperaccess.com/full/3551518.jpg')]">
-	<div class="z-998 h-[calc(100%-10rem)] w-[calc(100%-10rem)] overflow-hidden {containerStyle}">
+<div class="h-screen w-screen overflow-hidden flex items-center-safe justify-center bg-trasparent">
+	<div class="z-998 h-[calc(100%-10rem)] w-[calc(100%-10rem)] overflow-hidden px-4 py-8 bg-white dark:bg-gray-900 text-black dark:text-white rounded-lg shadow-md border border-gray-300 dark:border-gray-700">
 		<Menu {userInfo} />
 		<div class="my-5"></div>
 		<div class="grid grid-cols-4 gap-4 overflow-y-auto h-[calc(100%-5rem)]">

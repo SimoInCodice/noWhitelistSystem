@@ -11,6 +11,6 @@
 
 <ul>
     {#each tasks as task (task)}
-        <li class="transition-all duration-1000 { task.active ? 'text-green-400' : extraInfo ? 'opacity-100' : 'hidden'} {task.completed ? 'text-gray-400' : ''}">{task.description}</li>
+        <li class="transition-all duration-1000 { task.active ? 'text-green-400' : extraInfo ? 'opacity-100' : 'hidden'} {task.completed ? 'text-gray-400 line-through' : ''}">{task.description}</li>
     {/each}
 </ul>

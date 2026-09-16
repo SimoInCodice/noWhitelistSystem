@@ -17,5 +17,5 @@
 				</div>
 			</div>
 		{/if}
-		<!--<ToggleThemeBtn themeData={"light"} />-->
+		<ToggleThemeBtn themeData={"dark"} />
 </div>
